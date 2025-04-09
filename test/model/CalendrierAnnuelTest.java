@@ -21,6 +21,8 @@ class CalendrierAnnuelTest {
 	@Test
 	void testEstLibre() {
 		assertTrue(calendrier.estLibre(31,12), "31/12 devrait être libre");
+		assertTrue(calendrier.estLibre(1,12), "1/12 devrait être libre");
+		assertFalse(calendrier.estLibre(0,12), "0/12 devrait être indisponible");
 	}
 
 	@Test
