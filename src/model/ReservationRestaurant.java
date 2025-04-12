@@ -12,7 +12,8 @@ public class ReservationRestaurant extends Reservation {
 
     @Override
     public String toString() {
-    	return "� faire";
+    	String service = (numeroService == 1) ? "premier" : "deuxième";
+    	return String.format("Le %d/%d : table n°%d pour le %s service", jour, mois, numeroTable, service);
     }
     
 }
