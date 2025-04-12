@@ -2,7 +2,7 @@ package model;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class CentraleReservation <E, F extends Formulaire> {
+public abstract class CentraleReservation <E, F extends Formulaire, R extends Reservation> {
     protected List<E> entites;
     protected int nombreEntites;
 
@@ -13,11 +13,11 @@ public abstract class CentraleReservation <E, F extends Formulaire> {
 
     public int ajouterEntite(E entite) {
         entites.add(entite);
-        nombreEntites++;
-        return nombreEntites;
+        return ++nombreEntites;
     }
 
     public abstract int[] donnerPossibilites(F formulaire);
 
-    public abstract Reservation reserver(int numeroEntite, F formulaire);
+    public abstract R reserver(int numeroEntite, F formulaire);
+    
 }

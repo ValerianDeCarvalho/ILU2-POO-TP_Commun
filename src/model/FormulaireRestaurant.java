@@ -10,6 +10,10 @@ public class FormulaireRestaurant extends Formulaire {
         this.nombrePersonnes = nombrePersonnes;
     }
 
-    public int getNumService() { return numeroService; }
-    public int getNombrePersonnes() { return nombrePersonnes; }
+    public int getNumService() {
+    	return numeroService;
+    }
+    public int getNombrePersonnes() { 
+    	return nombrePersonnes; 
+    }
 }
