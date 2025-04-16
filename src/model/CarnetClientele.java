@@ -20,6 +20,10 @@ public class CarnetClientele {
 		}
 		return numClient;
 	}
+	
+    public Client[] getClients() {
+        return clients;
+    }
 
 	public Client getClient(int numClient) {
 		return clients[numClient];

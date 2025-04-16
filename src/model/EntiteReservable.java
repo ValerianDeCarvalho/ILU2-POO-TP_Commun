@@ -8,7 +8,7 @@ public abstract class EntiteReservable {
     protected int numero;
     protected List<LocalDate> reservations;
 
-    public EntiteReservable(int numero) {
+    protected EntiteReservable(int numero) {
         this.numero = numero;
         this.reservations = new ArrayList<>();
     }
